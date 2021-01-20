@@ -77,7 +77,7 @@ int main()
 	getchar();
 	return 0;
 }
-void initsnake()
+void initsnake()//初始化蛇
 {
 	snake.xy[2].x = 0;
 	snake.xy[2].y = 0;
@@ -89,7 +89,7 @@ void initsnake()
 	snake.postion = right;
 	food.flag = 0;
 }
-void drawsnake()
+void drawsnake()//画蛇
 {
 	for (int i = 0; i < snake.num; i++)
 	{
@@ -98,7 +98,7 @@ void drawsnake()
 		fillrectangle(snake.xy[i].x, snake.xy[i].y, snake.xy[i].x + 10, snake.xy[i].y + 10);
 	}
 }
-void movesnake()
+void movesnake()//移动蛇
 {
 	for (int i = snake.num - 1; i > 0; i--)
 	{
