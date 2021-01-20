@@ -6,7 +6,7 @@
 #define max 100
 HWND hwnd = NULL;
 //数据分析
-//定义 坐标
+//定义 坐标、、
 typedef struct Point
 {
 	int x;
